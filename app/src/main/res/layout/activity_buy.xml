@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicalstructure.BuyActivity">
+    <!-- HOME -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryLight"
+        android:orientation="vertical">
+
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Content listing -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:text="Song"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:gravity="center|left"
+                        android:text="Title\n Artist reference\nAlbum reference"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_margin="2dp"
+                        android:padding="20dp"
+                        android:gravity="center"
+                        android:src="@drawable/multimedia" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:text="Song"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:gravity="center|left"
+                        android:text="Title\n Artist reference\nAlbum reference"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_margin="2dp"
+                        android:padding="20dp"
+                        android:gravity="center"
+                        android:src="@drawable/multimedia" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_margin="2dp"
+                        android:gravity="center"
+                        android:text="Song"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="2dp"
+                        android:gravity="center|left"
+                        android:text="Title\n Artist reference\nAlbum reference"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_margin="2dp"
+                        android:padding="20dp"
+                        android:gravity="center"
+                        android:src="@drawable/multimedia" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/BoiteTexte"
+                android:text="In this activity the user is able to buy songs from the google music store.\n\nI'll use launchPurchaseFlow."
+                />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <!-- MENU BOTTOM -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_bottom_portrait_height"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                style="@style/Button_menu_bottom"
+                android:id="@+id/principal"
+                android:layout_margin="@dimen/nav_button_margin"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/play" />
+
+            <TextView
+                style="@style/Button_menu_bottom"
+                android:id="@+id/recherche"
+                android:layout_margin="@dimen/nav_button_margin"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/browse" />
+
+            <TextView
+                style="@style/Button_menu_bottom"
+                android:id="@+id/mixage"
+                android:layout_margin="@dimen/nav_button_margin"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/mix" />
+
+            <TextView
+                style="@style/Button_menu_bottom"
+                android:id="@+id/partage"
+                android:layout_margin="@dimen/nav_button_margin"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/share" />
+
+            <TextView
+                style="@style/Button_menu_bottom"
+                android:id="@+id/achat"
+                android:layout_margin="@dimen/nav_button_margin_highlight"
+                android:background="@color/colorPrimary"
+                android:text="@string/buy" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

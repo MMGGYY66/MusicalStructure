@@ -1,28 +1,23 @@
 package com.example.android.musicalstructure;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import static com.example.android.musicalstructure.R.id.albumplaying;
-
-public class MainActivity extends AppCompatActivity {
+public class BuyActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_buy);
 
-
-        TextView album = (TextView) findViewById(R.id.albumplaying);
-        album.setOnClickListener(new View.OnClickListener(){
+        TextView main = (TextView) findViewById(R.id.principal);
+        main.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent playIntent = new Intent(MainActivity.this, BrowseActivity.class);
+                Intent playIntent = new Intent(BuyActivity.this, MainActivity.class);
                 startActivity(playIntent);
             }
         });
@@ -31,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         browse.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent playIntent = new Intent(MainActivity.this, BrowseActivity.class);
+                Intent playIntent = new Intent(BuyActivity.this, BrowseActivity.class);
                 startActivity(playIntent);
             }
         });
@@ -40,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mix.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent playIntent = new Intent(MainActivity.this, MixActivity.class);
+                Intent playIntent = new Intent(BuyActivity.this, MixActivity.class);
                 startActivity(playIntent);
             }
         });
@@ -49,18 +44,13 @@ public class MainActivity extends AppCompatActivity {
         share.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent playIntent = new Intent(MainActivity.this, ShareActivity.class);
+                Intent playIntent = new Intent(BuyActivity.this, ShareActivity.class);
                 startActivity(playIntent);
             }
         });
 
-        TextView buy = (TextView) findViewById(R.id.achat);
-        buy.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent playIntent = new Intent(MainActivity.this, BuyActivity.class);
-                startActivity(playIntent);
-            }
-        });
+
+
+
     }
 }

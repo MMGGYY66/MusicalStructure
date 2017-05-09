@@ -1,46 +1,36 @@
 package com.example.android.musicalstructure;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import static com.example.android.musicalstructure.R.id.albumplaying;
+import static com.example.android.musicalstructure.R.string.browse;
 
-public class MainActivity extends AppCompatActivity {
+public class BrowseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_browse);
 
-
-        TextView album = (TextView) findViewById(R.id.albumplaying);
-        album.setOnClickListener(new View.OnClickListener(){
+        TextView main = (TextView) findViewById(R.id.principal);
+        main.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent playIntent = new Intent(MainActivity.this, BrowseActivity.class);
+                Intent playIntent = new Intent(BrowseActivity.this, MainActivity.class);
                 startActivity(playIntent);
             }
         });
 
-        TextView browse = (TextView) findViewById(R.id.recherche);
-        browse.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                Intent playIntent = new Intent(MainActivity.this, BrowseActivity.class);
-                startActivity(playIntent);
-            }
-        });
+
 
         TextView mix = (TextView) findViewById(R.id.mixage);
         mix.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent playIntent = new Intent(MainActivity.this, MixActivity.class);
+                Intent playIntent = new Intent(BrowseActivity.this, MixActivity.class);
                 startActivity(playIntent);
             }
         });
@@ -49,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         share.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent playIntent = new Intent(MainActivity.this, ShareActivity.class);
+                Intent playIntent = new Intent(BrowseActivity.this, ShareActivity.class);
                 startActivity(playIntent);
             }
         });
@@ -58,9 +48,10 @@ public class MainActivity extends AppCompatActivity {
         buy.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent playIntent = new Intent(MainActivity.this, BuyActivity.class);
+                Intent playIntent = new Intent(BrowseActivity.this, BuyActivity.class);
                 startActivity(playIntent);
             }
         });
+
     }
 }

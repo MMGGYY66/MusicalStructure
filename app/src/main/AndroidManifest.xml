@@ -16,9 +16,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.musicalstructure.PlayActivity"
-            android:label="Player"
-            android:parentActivityName="com.example.android.musicalstructure.MainActivity">
+        <activity
+            android:name=".BrowseActivity"
+            android:label="@string/browse">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musicalstructure.MainActivity" />
+        </activity>
+        <activity android:name=".MixActivity"
+            android:label="@string/mix">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musicalstructure.MainActivity" />
+        </activity>
+        <activity android:name=".ShareActivity"
+            android:label="@string/share">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.musicalstructure.MainActivity" />
+        </activity>
+        <activity android:name=".BuyActivity"
+            android:label="@string/buy">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.musicalstructure.MainActivity" />
